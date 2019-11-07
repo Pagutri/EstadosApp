@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="std_margin">16dp</dimen>
+    <dimen name="sec_margin">8dp</dimen>
+    <dimen name="header_size">24sp</dimen>
+</resources>

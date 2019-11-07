@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.estados.MainActivity">
+
+    <!-- To do: Añadir botón de conversiones con su respectiva activity -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Primera fila de botones -->
+        <LinearLayout
+            style="@style/ButtonRowStyle">
+
+            <!-- Primer botón -->
+            <LinearLayout
+                android:id="@+id/gas_ideal_btn"
+                style="@style/ButtonStyle"
+                android:layout_marginRight="@dimen/sec_margin"
+                android:background="@color/blue">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/globo"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/ideal_str"/>
+
+            </LinearLayout>
+
+            <!-- Segundo botón -->
+            <LinearLayout
+                android:id="@+id/dieterici_btn"
+                style="@style/ButtonStyle"
+                android:layout_marginRight="@dimen/sec_margin"
+                android:layout_marginLeft="@dimen/sec_margin"
+                android:background="@color/violet">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/bombilla"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/dieterici_str"/>
+
+            </LinearLayout>
+
+            <!-- Tercer botón -->
+            <LinearLayout
+                android:id="@+id/vanderwaals_btn"
+                style="@style/ButtonStyle"
+                android:background="@color/orange"
+                android:layout_marginLeft="@dimen/sec_margin">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/nube"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/waals_str"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Segunda fila de botones -->
+        <LinearLayout
+            style="@style/ButtonRowStyle">
+
+            <!-- Primer botón -->
+            <LinearLayout
+                android:id="@+id/redlich_btn"
+                style="@style/ButtonStyle"
+                android:layout_marginRight="@dimen/sec_margin"
+                android:background="@color/pink">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/brote"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/redlich_str"/>
+
+            </LinearLayout>
+
+            <!-- Segundo botón -->
+            <LinearLayout
+                android:id="@+id/soave_btn"
+                style="@style/ButtonStyle"
+                android:layout_marginRight="@dimen/sec_margin"
+                android:layout_marginLeft="@dimen/sec_margin"
+                android:background="@color/green">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/capa"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/soave_str"/>
+
+            </LinearLayout>
+
+            <!-- Tercer botón -->
+            <LinearLayout
+                android:id="@+id/peng_btn"
+                style="@style/ButtonStyle"
+                android:background="@color/darkBlue"
+                android:layout_marginLeft="@dimen/sec_margin">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/madera"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/peng_str"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Tercera fila de botones -->
+        <LinearLayout
+            style="@style/ButtonRowStyle">
+
+            <!-- Primer botón -->
+            <LinearLayout
+                android:id="@+id/wilson_btn"
+                style="@style/ButtonStyle"
+                android:layout_marginRight="@dimen/sec_margin"
+                android:background="@color/red">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/agua"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/wilson_str"/>
+
+            </LinearLayout>
+
+            <!-- Segundo botón -->
+            <LinearLayout
+                android:id="@+id/marg_btn"
+                style="@style/ButtonStyle"
+                android:layout_marginRight="@dimen/sec_margin"
+                android:layout_marginLeft="@dimen/sec_margin"
+                android:background="@color/yellow">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/regadera"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/marg_str"/>
+
+            </LinearLayout>
+
+            <!-- Tercer botón -->
+            <LinearLayout
+                android:id="@+id/vanlaar_btn"
+                style="@style/ButtonStyle"
+                android:background="@color/lightGreen"
+                android:layout_marginLeft="@dimen/sec_margin">
+
+                <ImageView
+                    style="@style/IconStyle"
+                    android:src="@drawable/timon"/>
+
+                <TextView
+                    style="@style/ButtonTextStyle"
+                    android:text="@string/laar_str"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<resources>
+    <!-- Strings para nombres -->
+    <string name="app_name">Estados</string>
+    <string name="ideal_str">Gas ideal</string>
+    <string name="dieterici_str">Dieterici</string>
+    <string name="waals_str">Van der Waals</string>
+    <string name="redlich_str">Redlich-Kwong</string>
+    <string name="soave_str">Soave</string>
+    <string name="peng_str">Peng-Robinson</string>
+    <string name="wilson_str">Wilson</string>
+    <string name="marg_str">Margules</string>
+    <string name="laar_str">Van Laar</string>
+    <string name="calc_str">Calcular</string>
+    <string name="conv_str">Convertir</string>
+    <string name="reset_str">Borrar todo</string>
+    <string name="a_par_str">Parámetro a</string>
+    <string name="b_par_str">Parámetro b</string>
+    <string name="plot_str">Graficar</string>
+
+    <!-- Strings para ecuaciones -->
+    <string name="ideal_ec">PV = nRT</string>
+
+    <!-- Strings para datos -->
+    <string name="P_str">Presión</string>
+    <string name="V_str">Volumen</string>
+    <string name="n_str">Moles</string>
+    <string name="T_str">Temperatura</string>
+    <string name="z_str">Factor de compresibilidad</string>
+    <string name="Vm_str">Volumen molar</string>
+
+    <!-- Strings para Toasts -->
+    <string name="falta_algo">Uno o más campos están vacíos</string>
+
+    <!-- Arrays para spinners -->
+    <string-array name="presion_array">
+        <item>atm</item>
+        <item>Pa</item>
+        <item>bar</item>
+        <item>mmHg</item>
+        <item>PSI</item>
+    </string-array>
+
+    <string-array name="volum_array">
+        <item>lts</item>
+        <item>m3</item>
+    </string-array>
+
+    <string-array name="mol_volum_array">
+        <item>lts/mol</item>
+        <item>m3/mol</item>
+    </string-array>
+
+    <string-array name="temp_array">
+        <item>K</item>
+        <item>°C</item>
+        <item>°F</item>
+        <item>R</item>
+    </string-array>
+
+    <string-array name="sust_array">
+        <item>Agua</item>
+        <item>CO_2</item>
+    </string-array>
+
+    <!-- Otros strings -->
+    <string name="PVdia_str">Diagrama P-V</string>
+
+</resources>

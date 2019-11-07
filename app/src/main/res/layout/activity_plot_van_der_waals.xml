@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.estados.PlotVanDerWaalsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginTop="@dimen/std_margin"
+            android:text="@string/PVdia_str"/>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/waals_str" />
+
+        <!-- TODO: Averiguar si puedo escribir tipo LATEX-->
+        <!-- TODO: Corregir el problema de la extrema sensibilidad al fling-->
+
+        <!-- Campo de la presión inicial -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="P_i:"/>
+
+            <EditText
+                android:id="@+id/Pi_edit_text"
+                style="@style/SmallFieldEditTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Campo de la presión final -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="P_f:"/>
+
+            <EditText
+                android:id="@+id/Pf_edit_text"
+                style="@style/SmallFieldEditTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Campo del volumen inicial -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="V_i:"/>
+
+            <EditText
+                android:id="@+id/Vi_edit_text"
+                style="@style/SmallFieldEditTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Campo del volumen final -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="V_f:"/>
+
+            <EditText
+                android:id="@+id/Vf_edit_text"
+                style="@style/SmallFieldEditTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Campo de la temperatura -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="T:"/>
+
+            <EditText
+                android:id="@+id/T_edit_text"
+                style="@style/SmallFieldEditTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Campo de las divisiones -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="Partes:"/>
+
+            <EditText
+                android:id="@+id/parts_edit_text"
+                style="@style/SmallFieldEditTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Campo del parámetro a -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="a:"/>
+
+            <EditText
+                android:id="@+id/a_edit_text"
+                style="@style/SmallFieldEditTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Campo del parámetro b -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="b:"/>
+
+            <EditText
+                android:id="@+id/b_edit_text"
+                style="@style/SmallFieldEditTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Spinner de las sustancias -->
+        <LinearLayout style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="Sustancia:" />
+
+            <Spinner
+                android:id="@+id/sust_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/sust_array"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sec_margin">
+
+            <TextView
+                android:id="@+id/plot_btn"
+                style="@style/SmallButtonStyle"
+                android:text="@string/plot_str"
+                android:background="@color/orange"
+                android:layout_marginLeft="@dimen/std_margin"
+                android:layout_marginRight="@dimen/sec_margin"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/reset_btn"
+                style="@style/SmallButtonStyle"
+                android:text="@string/reset_str"
+                android:background="@color/orange"
+                android:layout_marginRight="@dimen/std_margin"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/graph" />
+
+        <TextView
+            style="@style/FieldTextStyle"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valores críticos"
+            android:layout_marginTop="@dimen/sec_margin"/>
+
+        <!-- Resultado temp. crítica -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="T_c:"/>
+
+            <TextView
+                android:id="@+id/Tc_text_view"
+                style="@style/FieldTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Resultado volumen crítico -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="V_mc:"/>
+
+            <TextView
+                android:id="@+id/Vc_text_view"
+                style="@style/FieldTextStyle"/>
+
+        </LinearLayout>
+
+        <!-- Resultado presión crítica -->
+        <LinearLayout
+            style="@style/FieldStyle">
+
+            <TextView
+                style="@style/FieldTextStyle"
+                android:text="P_c:"/>
+
+            <TextView
+                android:id="@+id/Pc_text_view"
+                style="@style/FieldTextStyle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
